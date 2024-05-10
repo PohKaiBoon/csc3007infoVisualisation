@@ -1,0 +1,33 @@
+---
+title: "Week 1"
+format: html
+editor: visual
+---
+
+# Introduction
+
+```{r}
+#| label: required-packages
+#| message: false
+
+library(tidyverse)
+library(readxl)
+```
+
+# Unzip Data and Import All Extracted CSV Files
+
+```{r}
+unzip("nycflights13_data.zip")
+airlines <- read_csv("airlines.csv")
+airports <- read_csv("airports.csv")
+flights <- read_csv("flights.csv")
+planes <- read_csv("planes.csv")
+weather <- read_csv("weather.csv")
+airlines
+airports
+flights
+planes
+weather
+```
+
+
